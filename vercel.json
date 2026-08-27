@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/about/", "destination": "/en/about/", "permanent": true },
+    { "source": "/services/", "destination": "/en/services/", "permanent": true },
+    { "source": "/packages/", "destination": "/en/packages/", "permanent": true },
+    { "source": "/careers/", "destination": "/en/careers/", "permanent": true },
+    { "source": "/terms/", "destination": "/en/terms/", "permanent": true },
+    { "source": "/journal/hotel-marketing-strategy/", "destination": "/en/journal/hotel-marketing-strategy/", "permanent": true },
+    { "source": "/journal/hospitality-marketing-strategy/", "destination": "/en/journal/hospitality-marketing-strategy/", "permanent": true }
+  ]
+}
