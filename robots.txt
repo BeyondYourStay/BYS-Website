@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /studio/
+
+# Sitemaps
+Sitemap: https://beyondyourstay.com/sitemap.xml
+
+# Crawl delay to reduce server load (ms)
+Crawl-delay: 1

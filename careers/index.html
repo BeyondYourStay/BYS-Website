@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://beyondyourstay.com/careers/">
+  <meta name="description" content="Join Beyond Your Stay. Hiring creative and strategic talent for hospitality marketing roles. Help us tell the stories of amazing places.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<style>
+  .job-card{border:1px solid var(--line);border-radius:16px;margin-top:20px;overflow:hidden;}
+  .job-toggle{width:100%;background:none;border:none;cursor:pointer;text-align:left;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;gap:24px;}
+  .job-toggle-text{flex:1;}
+  .job-title{font-family:'Fraunces',serif;font-size:clamp(20px,2.4vw,25px);color:var(--navy);}
+  .job-summary{font-family:'Inter',sans-serif;font-size:13.5px;line-height:1.6;color:var(--navy);opacity:.62;font-weight:300;margin-top:8px;max-width:58ch;}
+  .job-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+  .job-tag{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dusk);border:1px solid var(--line);padding:6px 12px;border-radius:100px;}
+  .job-plus{flex-shrink:0;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;transition:transform .35s var(--ease);}
+  .job-plus::before,.job-plus::after{content:'';position:absolute;background:var(--navy);transition:opacity .3s;}
+  .job-plus::before{width:12px;height:1.4px;}
+  .job-plus::after{width:1.4px;height:12px;}
+  .job-card.open .job-plus{transform:rotate(135deg);}
+  .job-body{max-height:0;overflow:hidden;transition:max-height .5s var(--ease);}
+  .job-card.open .job-body{max-height:1400px;}
+  .job-body-inner{padding:0 34px 38px;border-top:1px solid var(--line);margin-top:2px;padding-top:28px;}
+  .job-section{margin-bottom:26px;}
+  .job-section h4{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--dusk);margin-bottom:14px;font-weight:500;}
+  .job-section ul{list-style:none;padding:0;}
+  .job-section li{font-size:14.5px;line-height:1.7;color:var(--navy);opacity:.8;padding-left:22px;position:relative;margin-bottom:10px;font-family:'Inter',sans-serif;font-weight:300;}
+  .job-section li::before{content:'-';position:absolute;left:0;color:var(--dusk);}
+  .job-section p{font-size:14.5px;line-height:1.8;color:var(--navy);opacity:.8;font-family:'Inter',sans-serif;font-weight:300;max-width:64ch;}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap">
+    <a class="logo" href="/">
+      <img class="logo-navy" src="/assets/logo/bys-logo-navy.png" alt="Beyond Your Stay">
+      <img class="logo-color" src="/assets/logo/bys-logo-light.png" alt="Beyond Your Stay">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/" data-nl="Home">Home</a></li>
+        <li><a href="/about" data-nl="Over ons">About</a></li>
+        <li><a href="/services" data-nl="Diensten">Services</a></li>
+        <li><a href="/packages" data-nl="Pakketten">Packages</a></li>
+        <li><a href="/cases" data-nl="Cases">Cases</a></li>
+        <li><a href="/studio" data-nl="BYS Studio">BYS Studio</a></li>
+        <li><a href="/contact" data-nl="Contact">Contact</a></li>
+      </ul>
+      <div class="lang"><span class="active">EN</span><span>NL</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-fade">
+
+<section class="page-hero bg-beige">
+  <div class="wrap reveal">
+    <div class="eyebrow" data-nl="Werken bij BYS">Careers</div>
+    <h1 data-nl="Help ons de merkkant hiervan op te bouwen.">Help us build the brand side of this.</h1>
+    <p data-nl="We helpen andere plekken de juiste mensen aan te trekken. Dit is hoe we onze eigen werving aanpakken: geen wervingsbureau, gewoon direct.">We help other places attract the right people. This is how we handle our own hiring: no recruiter in between, just directly.</p>
+  </div>
+</section>
+
+<section class="section-pad" style="padding-bottom:60px;">
+  <div class="wrap">
+    <p style="font-size:15px;line-height:1.85;opacity:.65;font-weight:300;max-width:64ch;font-family:'Inter',sans-serif;" data-nl="We zijn een klein team. Dat betekent dat wie hier bijkomt niet ergens onderin een organogram verdwijnt, maar direct met echte klanten en echt werk te maken krijgt.">We're a small team. That means whoever joins doesn't disappear into an org chart somewhere, they work directly on real clients and real work.</p>
+
+    <div class="job-card" data-job="branding">
+      <button class="job-toggle">
+        <div class="job-toggle-text">
+          <div class="job-title">Branding Specialist</div>
+          <p class="job-summary" data-nl="Bouw merk- en visuele identiteit voor hotels, restaurants, attracties en resorts, van eerste gesprek tot eindresultaat.">Build brand and visual identity for hotels, restaurants, attractions and resorts, from first conversation to finished result.</p>
+          <div class="job-meta">
+            <span class="job-tag" data-nl="Freelance">Freelance</span>
+            <span class="job-tag" data-nl="Flexibele uren">Flexible hours</span>
+            <span class="job-tag" data-nl="Helmond, hybride">Helmond, hybrid</span>
+          </div>
+        </div>
+        <span class="job-plus"></span>
+      </button>
+      <div class="job-body">
+        <div class="job-body-inner">
+          <div class="job-section">
+            <h4 data-nl="Waar dit over gaat">What this is about</h4>
+            <p data-nl="We zoeken iemand die merkidentiteit en visuele identiteit kan optuigen voor hotels, restaurants, attracties en resorts, van eerste gesprek tot afgerond eindresultaat.">We're looking for someone who can build brand and visual identity for hotels, restaurants, attractions and resorts, from first conversation to finished result.</p>
+          </div>
+
+          <div class="job-section">
+            <h4 data-nl="Wat je gaat doen">What you'll do</h4>
+            <ul>
+              <li data-nl="Merk- en visuele identiteit ontwikkelen voor nieuwe en bestaande klanten">Develop brand and visual identity for new and existing clients</li>
+              <li data-nl="Logo's, kleur- en typografiesystemen, en merkrichtlijnen opstellen">Build logos, color and typography systems, and brand guidelines</li>
+              <li data-nl="Het karakter van een plek vertalen naar een visueel systeem dat overal overeind blijft">Translate a place's character into a visual system that holds up across every channel</li>
+              <li data-nl="Zelf presenteren aan klanten, geen tussenpersoon die het voor je doet">Present your own work to clients, no one presenting it for you</li>
+            </ul>
+          </div>
+
+          <div class="job-section">
+            <h4 data-nl="Wat we zoeken">What we're looking for</h4>
+            <ul>
+              <li data-nl="Een portfolio dat laat zien dat je een merk kunt opbouwen, niet alleen een logo kunt tekenen">A portfolio that shows you can build a brand, not just draw a logo</li>
+              <li data-nl="Ervaring met hospitality, lifestyle of leisure-merken is een pre, geen vereiste">Experience with hospitality, lifestyle or leisure brands is a plus, not a requirement</li>
+              <li data-nl="Je voelt je prettig bij een project van begin tot eind zelf dragen">You're comfortable owning a project from start to finish</li>
+              <li data-nl="Dezelfde blik als wij: eerst begrijpen, dan pas bouwen">The same instinct we work from: understand first, then build</li>
+            </ul>
+          </div>
+
+          <div class="job-section" style="margin-bottom:0;">
+            <h4 data-nl="Hoe solliciteren">How to apply</h4>
+            <p data-nl="Stuur je portfolio en een korte toelichting naar info@beyondyourstay.com, of neem contact op via het formulier. Geen motivatiebrief-formaliteiten nodig, laat gewoon zien wat je hebt gemaakt.">Send your portfolio and a short note to info@beyondyourstay.com, or reach out through the contact form. No formal cover letter needed, just show us what you've made.</p>
+          </div>
+          <a class="btn" style="margin-top:8px;" href="/contact"><span data-nl="Solliciteer">Apply</span> <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="job-card" data-job="strategist">
+      <button class="job-toggle">
+        <div class="job-toggle-text">
+          <div class="job-title">Social Media Strategist</div>
+          <p class="job-summary" data-nl="Vertaal wie een gast is naar contentstrategieën die het team kan uitvoeren, geen sjablonen, altijd op maat.">Translate who a guest is into content strategies the team can execute, never a template, always on the mark.</p>
+          <div class="job-meta">
+            <span class="job-tag" data-nl="Freelance">Freelance</span>
+            <span class="job-tag" data-nl="Flexibele uren">Flexible hours</span>
+            <span class="job-tag" data-nl="Helmond, hybride">Helmond, hybrid</span>
+          </div>
+        </div>
+        <span class="job-plus"></span>
+      </button>
+      <div class="job-body">
+        <div class="job-body-inner">
+          <div class="job-section">
+            <h4 data-nl="Waar dit over gaat">What this is about</h4>
+            <p data-nl="Strategie is de basis onder alle content die we maken. We zoeken iemand die een plek kan doorgronden en dat vertaalt naar een strategie die het contentteam kan uitvoeren, geen kant-en-klaar sjabloon, maar iets dat past.">Strategy is the foundation under every piece of content we make. We're looking for someone who can read a place and translate that into a strategy the content team can execute, never a template, always something that fits.</p>
+          </div>
+
+          <div class="job-section">
+            <h4 data-nl="Wat je gaat doen">What you'll do</h4>
+            <ul>
+              <li data-nl="Contentstrategieën bouwen die geworteld zijn in wie de gast daadwerkelijk is">Build content strategies rooted in who the guest actually is</li>
+              <li data-nl="Contentpijlers, tone of voice en kanaal- en formatstrategie per klant bepalen">Define content pillars, tone of voice, and channel and format strategy per client</li>
+              <li data-nl="Wat je op locatie ziet vertalen naar een strategie die klopt, niet naar een algemeen draaiboek">Translate what you see on location into a strategy that fits, not a generic playbook</li>
+              <li data-nl="Prestaties opvolgen en de strategie bijsturen terwijl die loopt">Track performance and adjust the strategy as it runs</li>
+            </ul>
+          </div>
+
+          <div class="job-section">
+            <h4 data-nl="Wat we zoeken">What we're looking for</h4>
+            <ul>
+              <li data-nl="Ervaring met het bouwen van social media strategie, bij voorkeur voor hospitality, lifestyle of leisure-merken">Experience building social media strategy, ideally for hospitality, lifestyle or leisure brands</li>
+              <li data-nl="Je kunt een vage 'sfeer' omzetten naar een concreet, uitvoerbaar plan">You're comfortable turning a vague sense of atmosphere into a concrete, actionable plan</li>
+              <li data-nl="Je kijkt eerst, dan pas handel je: een plek begrijpen voordat je er een strategie omheen bouwt">You watch before you act: understanding a place before building a strategy around it</li>
+              <li data-nl="Je presenteert strategie zelfverzekerd en rechtstreeks aan klanten">You present strategy confidently and directly to clients</li>
+            </ul>
+          </div>
+
+          <div class="job-section" style="margin-bottom:0;">
+            <h4 data-nl="Hoe solliciteren">How to apply</h4>
+            <p data-nl="Stuur je portfolio of eerdere strategiewerk en een korte toelichting naar info@beyondyourstay.com, of neem contact op via het formulier.">Send your portfolio or past strategy work and a short note to info@beyondyourstay.com, or reach out through the contact form.</p>
+          </div>
+          <a class="btn" style="margin-top:8px;" href="/contact"><span data-nl="Solliciteer">Apply</span> <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta sky">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="color:var(--white);opacity:.85;" data-nl="Niet dit, maar wel nieuwsgierig">Not this, but curious</div>
+    <h2 data-nl="We horen graag van je, ook zonder open vacature.">We'd still like to hear from you, even without an open role.</h2>
+    <a class="btn on-dark" style="margin-top:44px;" href="/contact"><span data-nl="Neem contact op">Get in touch</span> <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="/"><img src="/assets/logo/bys-logo-light.png" alt="Beyond Your Stay"></a>
+        <p class="tag" data-nl="Storytelling voor hospitality- en leisuremerken: hotels, restaurants, attracties, wellness en resorts.">Storytelling for hospitality and leisure brands, hotels, restaurants, attractions, wellness and resorts.</p>
+      </div>
+      <div class="fcol"><h5 data-nl="Menu">Menu</h5>
+        <a href="/about" data-nl="Over ons">About</a><a href="/services" data-nl="Diensten">Services</a><a href="/packages" data-nl="Pakketten">Packages</a><a href="/cases" data-nl="Cases">Cases</a><a href="/studio" data-nl="BYS Studio">BYS Studio</a><a href="/contact" data-nl="Contact">Contact</a><a href="/careers" data-nl="Vacatures">Careers</a></div>
+      <div class="fcol"><h5 data-nl="Contact">Contact</h5>
+        <p>info@beyondyourstay.com</p><p>+31 6 49 84 75 78</p><p>Helmond, NL</p></div>
+      <div class="fcol"><h5 data-nl="Volg ons">Follow</h5>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/beyondyourstayy/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="#06293C" stroke-width="1.4"/><circle cx="12" cy="12" r="4.3" stroke="#06293C" stroke-width="1.4"/><circle cx="17.6" cy="6.4" r="1.1" fill="#06293C"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/beyondyourstay/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" fill="#06293C"/></svg>
+          </a>
+        </div></div>
+    </div><div class="footer-bottom"><span>© 2026 Beyond Your Stay. All rights reserved.</span><span class="footer-legal-links"><a href="/terms" data-nl="Algemene voorwaarden">Terms &amp; conditions</a> · <a href="/privacy" data-nl="Privacyverklaring">Privacy policy</a></span></div>
+  </div>
+</footer>
+
+</div>
+
+<script src="/assets/script.js"></script>
+<script>
+  document.querySelectorAll('.job-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.job-card');
+      card.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+</html>
