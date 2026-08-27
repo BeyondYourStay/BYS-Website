@@ -506,6 +506,8 @@ footer{padding:70px 0 36px;background:var(--white);border-top:1px solid var(--li
 .post-body ul{margin-top:20px;padding-left:0;list-style:none;}
 .post-body li{position:relative;padding-left:20px;margin-top:10px;font-size:16px;line-height:1.85;font-weight:300;color:var(--navy);opacity:.82;}
 .post-body li::before{content:'—';position:absolute;left:0;color:var(--dusk);}
+.post-body a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--dusk);text-underline-offset:3px;text-decoration-thickness:1px;transition:opacity .3s var(--ease);}
+.post-body a:hover{opacity:.65;}
 .post-body blockquote{margin:46px 0;padding:30px 34px;background:var(--beige);border-radius:14px;}
 .post-body blockquote p{margin:0;font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:clamp(19px,2.2vw,23px);line-height:1.55;color:var(--navy);opacity:1;}
 @media(max-width:700px){
@@ -517,7 +519,8 @@ footer{padding:70px 0 36px;background:var(--white);border-top:1px solid var(--li
 /* ---- post author ---- */
 .post-author{padding:14px 0 0;}
 .post-author .wrap{max-width:720px;}
-.post-author-inner{display:flex;align-items:center;gap:16px;padding-top:40px;border-top:1px solid var(--line);}
+.post-author-inner{display:flex;align-items:center;gap:16px;padding-top:40px;border-top:1px solid var(--line);transition:opacity .3s var(--ease);}
+.post-author-inner:hover{opacity:.7;}
 .post-author-avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;}
 .post-author-name{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.02em;font-weight:500;color:var(--navy);}
 .post-author-role{margin-top:2px;font-family:'Inter',sans-serif;font-size:12px;color:var(--navy);opacity:.55;font-weight:300;}
