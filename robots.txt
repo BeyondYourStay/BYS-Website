@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /studio/
+Disallow: /en/studio/
 
 # Sitemaps
 Sitemap: https://beyondyourstay.com/sitemap.xml

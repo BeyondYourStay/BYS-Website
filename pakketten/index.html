@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Pakketten, Beyond Your Stay</title>
+<meta property="og:title" content="Pakketten">
+<meta property="og:description" content="Social media beheer voor hospitality. Groeifases van start tot opschalen: Dawn, Sunrise, Horizon en Beyond Horizon. Kies je eigen tempo.">
+<meta property="og:image" content="https://beyondyourstay.com/og-image.jpg">
+<meta property="og:url" content="https://beyondyourstay.com/pakketten/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://beyondyourstay.com/pakketten/">
+<link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/pakketten/">
+<link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/packages/">
+<link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/pakketten/">
+<meta name="description" content="Social media beheer voor hospitality. Groeifases van start tot opschalen: Dawn, Sunrise, Horizon en Beyond Horizon. Kies je eigen tempo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<style>
+  .journey{position:relative;height:760px;margin:0;overflow:hidden;background:#050B14;}
+  .journey-bg{position:absolute;inset:0;transition:opacity 1.6s cubic-bezier(.22,.61,.36,1);}
+  .journey-bg.a{opacity:1;z-index:0;}
+  .journey-bg.b{opacity:0;z-index:0;}
+  .journey-glow{position:absolute;width:260px;height:260px;border-radius:50%;filter:blur(38px);pointer-events:none;z-index:0;
+    transition:left 1.6s cubic-bezier(.22,.61,.36,1), top 1.6s cubic-bezier(.22,.61,.36,1), background 1.6s ease, opacity 1.6s ease, width 1.6s ease, height 1.6s ease;
+    left:10%; top:78%; opacity:.5; background:radial-gradient(circle, rgba(201,165,116,0.55) 0%, rgba(201,165,116,0) 70%);}
+  .journey-stars{position:absolute;inset:0;z-index:0;opacity:0;transition:opacity 1.6s ease;pointer-events:none;}
+  .star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;animation:twinkle 3.4s ease-in-out infinite;}
+  @keyframes twinkle{0%,100%{opacity:.25;}50%{opacity:1;}}
+  .journey-veil{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0));pointer-events:none;}
+  .journey-milkyway{position:absolute;inset:-25% -15%;background:linear-gradient(112deg, transparent 32%, rgba(215,210,232,0.09) 44%, rgba(230,226,242,0.15) 50%, rgba(215,210,232,0.09) 56%, transparent 68%);filter:blur(7px);opacity:0;transition:opacity 1.8s ease;pointer-events:none;z-index:0;}
+
+  .journey-bird{position:absolute;width:40px;height:auto;left:8%;bottom:137px;transform:translateX(-50%);z-index:2;transition:left 1.6s cubic-bezier(.22,.61,.36,1), bottom 1.6s cubic-bezier(.22,.61,.36,1), filter 1.6s ease;animation:journeyGlide 5.5s ease-in-out infinite;}
+  @keyframes journeyGlide{0%,100%{margin-top:0;transform:translateX(-50%) rotate(0deg);}50%{margin-top:-7px;transform:translateX(-50%) rotate(1.4deg);}}
+  @media(prefers-reduced-motion: reduce){.journey-bird{animation:none;}}
+  .journey-moon{position:absolute;width:72px;height:72px;border-radius:50%;left:88%;bottom:472px;transform:translate(-50%,50%);
+    background:radial-gradient(circle at 35% 35%, #ffffff 0%, #F3EFE4 55%, #D8D3C4 100%);
+    box-shadow:0 0 26px 8px rgba(255,255,255,0.32);
+    opacity:0;transition:opacity 1.6s ease;z-index:1;}
+  .journey-moon-mask{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden;clip-path:circle(36px at 88% calc(100% - 472px));}
+  .journey-bird-dark{position:absolute;width:40px;height:auto;left:8%;bottom:137px;transform:translateX(-50%);transition:left 1.6s cubic-bezier(.22,.61,.36,1), bottom 1.6s cubic-bezier(.22,.61,.36,1);animation:journeyGlide 5.5s ease-in-out infinite;}
+
+  /* decorative (non-interactive) height markers */
+  .journey-marker{position:absolute;width:8px;height:8px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.55);transition:all .3s;pointer-events:none;z-index:3;}
+  .journey-marker.active{background:#F3D9BC;border-color:#F3D9BC;box-shadow:0 0 0 5px rgba(243,217,188,0.22);}
+  .journey-marker[data-tier="dawn"]{left:66%;bottom:64px;}
+  .journey-marker[data-tier="sunrise"]{left:74%;bottom:174px;}
+  .journey-marker[data-tier="horizon"]{left:81%;bottom:284px;}
+  .journey-marker[data-tier="beyond"]{left:88%;bottom:404px;}
+
+  /* left carousel: package name, swipe/arrows, progress dots */
+  .journey-content{position:absolute;inset:0;z-index:4;display:flex;align-items:flex-end;padding:0 40px 44px;gap:32px;}
+  .journey-carousel{flex:0 0 auto;width:230px;background:rgba(4,16,26,0.62);backdrop-filter:blur(8px);border-radius:16px;padding:24px 18px;touch-action:pan-y;}
+  .journey-carousel.is-fading{opacity:0;transform:translateY(6px);}
+  .jc-row{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .jc-arrow{background:rgba(255,255,255,0.12);border:none;width:34px;height:34px;border-radius:50%;color:#fff;font-size:17px;cursor:pointer;flex-shrink:0;transition:background .25s;display:flex;align-items:center;justify-content:center;}
+  .jc-arrow:hover{background:rgba(255,255,255,0.22);}
+  .jc-name{font-family:'Fraunces',serif;font-size:26px;color:#fff;text-align:center;flex:1;user-select:none;}
+  .jc-dots{display:flex;gap:7px;justify-content:center;margin-top:18px;}
+  .jc-progress-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.3);transition:all .3s;}
+  .jc-progress-dot.active{background:#F3D9BC;width:16px;border-radius:4px;}
+  .jc-hint{margin-top:14px;text-align:center;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
+
+  /* right specs panel */
+  .journey-specs-stack{position:relative;flex:1;min-width:0;max-width:460px;height:670px;}
+  .js-panel{position:absolute;inset:0;background:rgba(4,16,26,0.7);backdrop-filter:blur(8px);border-radius:16px;padding:26px 28px;color:#fff;
+    opacity:0;pointer-events:none;
+    transition:opacity .22s ease;
+    z-index:1;}
+  .js-panel.active{opacity:1;pointer-events:auto;z-index:3;}
+  .js-panel.leaving{opacity:0;z-index:2;transition:opacity .18s ease;}
+  .js-price{font-family:'Fraunces',serif;font-size:clamp(20px,2.4vw,26px);color:#F3D9BC;}
+  .js-price span{font-family:'Inter',sans-serif;font-size:12px;opacity:.65;margin-left:6px;color:#fff;}
+  .js-story{margin-top:10px;font-family:'Fraunces',serif;font-style:italic;font-size:14px;line-height:1.5;color:#fff;opacity:.85;}
+  .js-features{list-style:none;padding:0;margin-top:14px;border-top:1px solid rgba(255,255,255,0.15);}
+  .js-features li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12);font-size:12.5px;font-family:'Inter',sans-serif;font-weight:300;color:#fff;line-height:1.4;display:flex;align-items:flex-start;gap:10px;}
+  .js-features li svg{flex-shrink:0;margin-top:2px;width:13px;height:13px;}
+
+  @media(max-width:900px){
+    .journey{height:auto;min-height:auto;}
+    .journey-content{position:relative;flex-direction:column;padding:200px 20px 28px;gap:16px;align-items:stretch;}
+    .journey-carousel{width:auto;}
+    .journey-specs-stack{max-width:none;height:auto;position:relative;}
+    .js-panel{position:relative;inset:auto;display:none;}
+    .js-panel.active{display:block;}
+  }
+
+  .pkg-panel{padding:60px 0 20px;}
+
+  .faq-section{padding:60px 0 130px;}
+  .faq-card{border:1px solid var(--line);border-radius:16px;margin-top:16px;overflow:hidden;background:var(--white);}
+  .faq-toggle{width:100%;background:none;border:none;cursor:pointer;text-align:left;padding:26px 30px;display:flex;justify-content:space-between;align-items:center;gap:24px;font-family:'Fraunces',serif;font-size:17px;color:var(--navy);}
+  .faq-plus{flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);position:relative;transition:transform .35s var(--ease);}
+  .faq-plus::before,.faq-plus::after{content:'';position:absolute;top:50%;left:50%;background:var(--navy);transition:opacity .3s;}
+  .faq-plus::before{width:12px;height:1.4px;transform:translate(-50%,-50%);}
+  .faq-plus::after{width:1.4px;height:12px;transform:translate(-50%,-50%);}
+  .faq-card.open .faq-plus{transform:rotate(135deg);}
+  .faq-body{max-height:0;overflow:hidden;transition:max-height .5s var(--ease);}
+  .faq-card.open .faq-body{max-height:600px;}
+  .faq-body-inner{padding:0 30px 28px;font-family:'Inter',sans-serif;font-size:14.5px;line-height:1.8;color:var(--navy);opacity:.7;font-weight:300;max-width:64ch;}
+
+  .compass-capture{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;background:var(--beige);border-radius:12px;padding:16px;}
+  .compass-capture input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:100px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:13.5px;color:var(--navy);background:var(--white);}
+  .compass-capture input::placeholder{color:var(--navy);opacity:.4;}
+  .compass-capture button{flex-shrink:0;background:var(--navy);color:var(--white);border:none;border-radius:100px;padding:12px 22px;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;font-weight:500;cursor:pointer;transition:opacity .3s;}
+  .compass-capture button:hover{opacity:.85;}
+  .compass-note{margin-top:10px;font-size:12px;opacity:.55;display:none;}
+  .compass-note.visible{display:block;}
+  .js-year{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15);}
+  .js-year-eyebrow{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#F3D9BC;opacity:.85;margin-bottom:8px;}
+  .js-year-row{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;}
+  .js-year-row .l{font-family:'Inter',sans-serif;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;color:#fff;opacity:.6;}
+  .js-year-row .n{font-family:'Fraunces',serif;font-size:17px;color:#fff;}
+
+  .pkg-hero{padding:112px 0 22px;}
+  .pkg-hero h1{font-size:clamp(28px,3.6vw,46px);max-width:22ch;}
+  .pkg-hero .eyebrow{margin-bottom:14px;}
+  .pkg-hero p{margin-top:12px;font-size:12.5px;line-height:1.65;opacity:.5;max-width:64ch;}
+  @media(max-width:700px){.pkg-hero{padding:120px 0 32px;}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap">
+    <a class="logo" href="/">
+      <img class="logo-navy" src="/assets/logo/bys-logo-navy.png" alt="Beyond Your Stay">
+      <img class="logo-color" src="/assets/logo/bys-logo-light.png" alt="Beyond Your Stay">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/over-ons/">Over ons</a></li>
+        <li><a href="/diensten/">Diensten</a></li>
+        <li><a href="/pakketten/" class="active">Pakketten</a></li>
+        <li><a href="/cases/">Cases</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li><a href="/studio/">BYS Studio</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <div class="lang"><span class="active">NL</span><a href="/en/packages/" data-lang-switch="en">EN</a></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-fade">
+
+<section class="page-hero pkg-hero bg-beige">
+  <div class="wrap reveal">
+    <div class="eyebrow">Pakketten</div>
+    <h1>Elke fase van groei heeft een eigen hoofdstuk.</h1>
+    <p><span>Deze pakketten zijn uitsluitend voor social media beheer, onze doorlopende dienst. Alles daarbuiten, merkidentiteit, websites, betaalde groei en employer branding, bepalen we samen, per project.</span> <a href="/contact/" style="text-decoration:underline;"><span>Neem contact op</span></a> <span>voor die zaken.</span></p>
+  </div>
+</section>
+
+<div class="journey" id="journey">
+  <div class="journey-bg a" id="journeyBgA"></div>
+  <div class="journey-bg b" id="journeyBgB"></div>
+  <div class="journey-glow" id="journeyGlow"></div>
+  <div class="journey-stars" id="journeyStars"></div>
+  <div class="journey-milkyway" id="journeyMilkyway"></div>
+  <div class="journey-veil"></div>
+  <div class="journey-moon" id="journeyMoon"></div>
+  <img class="journey-bird" id="journeyBird" src="/assets/photos/tern-sil-wingsdown.png" alt="">
+  <div class="journey-moon-mask">
+    <img class="journey-bird-dark" id="journeyBirdDark" src="/assets/photos/tern-sil-dark.png" alt="">
+  </div>
+  <div class="journey-marker active" data-tier="dawn"></div>
+  <div class="journey-marker" data-tier="sunrise"></div>
+  <div class="journey-marker" data-tier="horizon"></div>
+  <div class="journey-marker" data-tier="beyond"></div>
+
+  <div class="journey-content">
+    <div class="journey-carousel" id="journeyCarousel">
+      <div class="jc-row">
+        <button class="jc-arrow" id="jcPrev" aria-label="Previous package" type="button">‹</button>
+        <div class="jc-name" id="jcName">Dawn</div>
+        <button class="jc-arrow" id="jcNext" aria-label="Next package" type="button">›</button>
+      </div>
+      <div class="jc-dots" id="jcDots">
+        <span class="jc-progress-dot active" data-tier="dawn"></span>
+        <span class="jc-progress-dot" data-tier="sunrise"></span>
+        <span class="jc-progress-dot" data-tier="horizon"></span>
+        <span class="jc-progress-dot" data-tier="beyond"></span>
+      </div>
+      <div class="jc-hint">Swipe of klik om te wisselen</div>
+    </div>
+
+    <div class="journey-specs-stack" id="journeySpecsStack">
+      <div class="js-panel active" data-tier="dawn">
+        <div class="js-price">€799<span>/ maand</span></div>
+        <p class="js-story">De stern hangt nog laag boven het water, net wakker. Hij kijkt, oriënteert zich, zet de eerste voorzichtige slagen, nog niets overhaast.</p>
+        <ul class="js-features">
+          <li>4 posts per maand</li>
+          <li>4 Shorts per maand</li>
+          <li>1 shoot per kwartaal</li>
+          <li>Instagram &amp; Facebook</li>
+          <li>Volledig contentbeheer: planning, captions, publicatie</li>
+          <li>Strategiesessie elk kwartaal</li>
+          <li>Toegang tot BYS Studio</li>
+        </ul>
+        <div class="js-year">
+          <div class="js-year-eyebrow">Over 12 maanden</div>
+          <div class="js-year-row"><span class="l">Posts</span><span class="n">48</span></div>
+          <div class="js-year-row"><span class="l">Shorts</span><span class="n">48</span></div>
+          <div class="js-year-row"><span class="l">Shoots op locatie</span><span class="n">4</span></div>
+        </div>
+      </div>
+
+      <div class="js-panel" data-tier="sunrise">
+        <div class="js-price">€999<span>/ maand</span></div>
+        <p class="js-story">Het licht breekt door en de stern zet vaart. Hij heeft zijn richting gevonden, vliegt met meer doel, en legt met elke vleugelslag meer afstand af.</p>
+        <ul class="js-features">
+          <li>4 posts per maand</li>
+          <li>4 Shorts per maand</li>
+          <li>1 shoot per 2 maanden</li>
+          <li>Instagram, Facebook, TikTok &amp; LinkedIn</li>
+          <li>Volledig contentbeheer: planning, captions, publicatie</li>
+          <li>Strategiesessie elke 2 maanden</li>
+          <li>Toegang tot BYS Studio</li>
+        </ul>
+        <div class="js-year">
+          <div class="js-year-eyebrow">Over 12 maanden</div>
+          <div class="js-year-row"><span class="l">Posts</span><span class="n">48</span></div>
+          <div class="js-year-row"><span class="l">Shorts</span><span class="n">48</span></div>
+          <div class="js-year-row"><span class="l">Shoots op locatie</span><span class="n">6</span></div>
+        </div>
+      </div>
+
+      <div class="js-panel" data-tier="horizon">
+        <div class="js-price">€1,599<span>/ maand</span></div>
+        <p class="js-story">Volle daglicht, volle vaart. De stern vliegt nu hoog en stabiel, houdt met vertrouwen koers, en legt grote afstanden af zonder ooit precisie te verliezen.</p>
+        <ul class="js-features">
+          <li>8 posts per maand</li>
+          <li>8 Shorts per maand</li>
+          <li>1 shoot per maand</li>
+          <li>Instagram, Facebook, TikTok &amp; LinkedIn</li>
+          <li>Volledig contentbeheer: planning, captions, publicatie</li>
+          <li>Toegang tot storymodule</li>
+          <li>Actief community management: reacties op comments en DM's</li>
+          <li>Strategiesessie elke maand</li>
+          <li>Toegang tot BYS Studio</li>
+        </ul>
+        <div class="js-year">
+          <div class="js-year-eyebrow">Over 12 maanden</div>
+          <div class="js-year-row"><span class="l">Posts</span><span class="n">96</span></div>
+          <div class="js-year-row"><span class="l">Shorts</span><span class="n">96</span></div>
+          <div class="js-year-row"><span class="l">Shoots op locatie</span><span class="n">12</span></div>
+        </div>
+      </div>
+
+      <div class="js-panel" data-tier="beyond">
+        <div class="js-price">€2,499<span>/ maand</span></div>
+        <p class="js-story">De schemering valt en de stern vliegt door, voorbij het punt waar de meeste vogels zich zouden settelen. Dit is het tempo van een vogel die nooit echt stopt, altijd op weg naar de volgende horizon.</p>
+        <ul class="js-features">
+          <li>12 posts per maand</li>
+          <li>12 Shorts per maand</li>
+          <li>1 shoot per maand, plus voorrang bij unieke momenten op locatie</li>
+          <li>Alle platformen, volledig beheerd</li>
+          <li>Volledig contentbeheer: planning, captions, publicatie</li>
+          <li>Toegang tot storymodule</li>
+          <li>Actief community management: reacties op comments en DM's</li>
+          <li>Strategiesessies wanneer nodig, geen vast schema</li>
+          <li>Toegang tot BYS Studio</li>
+        </ul>
+        <div class="js-year">
+          <div class="js-year-eyebrow">Over 12 maanden</div>
+          <div class="js-year-row"><span class="l">Posts</span><span class="n">144</span></div>
+          <div class="js-year-row"><span class="l">Shorts</span><span class="n">144</span></div>
+          <div class="js-year-row"><span class="l">Shoots op locatie</span><span class="n">12</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="wrap pkg-panel">
+  <a class="btn" href="/contact/"><span>Start met dit pakket</span> <span class="arrow">→</span></a>
+  <p style="margin-top:22px;font-size:13px;line-height:1.7;opacity:.55;max-width:52ch;font-family:'Inter',sans-serif;font-weight:300;"><span>Elk pakket begint met een</span> <strong style="font-weight:500;">First Light</strong> <span>maand: een eerste stap, zonder verplichting. Van daaruit kan het uitgroeien tot een samenwerking van 12 maanden.</span></p>
+</section>
+
+<section class="wrap faq-section">
+  <div class="eyebrow" style="margin-bottom:14px;">Veelgestelde vragen</div>
+  <h2 style="font-size:clamp(26px,3vw,38px);font-weight:400;max-width:18ch;">Vragen die we vaak krijgen.</h2>
+
+  <div class="faq-card">
+    <button class="faq-toggle"><span>Wat gebeurt er na de First Light-maand?</span><span class="faq-plus"></span></button>
+    <div class="faq-body"><div class="faq-body-inner">
+      <p>Als het klikt, zetten we de samenwerking voort als een doorlopend traject van 12 maanden. Voelt het niet goed, dan stopt het gewoon na die eerste maand, zonder verdere verplichting.</p>
+    </div></div>
+  </div>
+
+  <div class="faq-card">
+    <button class="faq-toggle"><span>Kan ik tussen pakketten wisselen?</span><span class="faq-plus"></span></button>
+    <div class="faq-body"><div class="faq-body-inner">
+      <p>Ja. Groeit je behoefte mee, dan schuiven we mee naar een groter pakket. Dat regelen we in overleg, niet via een los contract.</p>
+    </div></div>
+  </div>
+
+  <div class="faq-card">
+    <button class="faq-toggle"><span>Werken jullie ook buiten social media om, zoals website of branding?</span><span class="faq-plus"></span></button>
+    <div class="faq-body"><div class="faq-body-inner">
+      <p>Ja, maar dat loopt buiten de pakketten hierboven om. Die zijn uitsluitend voor social media beheer. Alles daarbuiten, zoals merkidentiteit, websites, betaalde groei of employer branding, bepalen we per project, op maat.</p>
+    </div></div>
+  </div>
+
+  <div class="faq-card">
+    <button class="faq-toggle"><span>Hoe snel kunnen jullie starten?</span><span class="faq-plus"></span></button>
+    <div class="faq-body"><div class="faq-body-inner">
+      <p>Meestal binnen twee tot drie weken na het intakegesprek, afhankelijk van hoe snel we op locatie kunnen filmen.</p>
+    </div></div>
+  </div>
+
+  <div class="faq-card">
+    <button class="faq-toggle"><span>Wat is BYS Studio?</span><span class="faq-plus"></span></button>
+    <div class="faq-body"><div class="faq-body-inner">
+      <p>BYS Studio is een tool die we zelf hebben gebouwd, en elke klant krijgt er toegang toe. Het analyseert je social media en brengt precies in kaart waar je nu staat in de markt, en laat zien waar de echte kansen voor groei liggen. Het kijkt daarbij specifiek naar wat voor soort bedrijf je bent, geen generiek sjabloon. En het gaat verder dan je eigen kanalen: het scant je website en social-mediaccounts naast die van je concurrenten, zodat de strategie die we bouwen gebaseerd is op wat daadwerkelijk werkt, niet op een gok. Als klant krijg je ook je eigen inlog: een plek om content te bekijken voordat die live gaat, direct feedback te geven, de contentagenda te checken, en de statistieken erachter te zien.</p>
+    </div></div>
+  </div>
+
+  <div class="faq-card">
+    <button class="faq-toggle"><span>Hoe weet ik wat voor soort marketing het beste bij mij past?</span><span class="faq-plus"></span></button>
+    <div class="faq-body"><div class="faq-body-inner">
+      <p>Dat verschilt per plek, en dat is precies waar we bij helpen tijdens het intakegesprek. Wil je zelf alvast een idee krijgen? Download The Compass, ons gratis beginnersstappenplan om te ontdekken welke richting bij jouw plek past.</p>
+      <div class="compass-capture">
+        <input type="email" placeholder="jij@email.nl">
+        <button type="button" id="compassDownloadBtn">Download The Compass</button>
+      </div>
+      <p class="compass-note" id="compassNote">Bedankt. The Compass verschijnt binnenkort in je inbox.</p>
+    </div></div>
+  </div>
+</section>
+
+<section class="cta sky">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="color:var(--white);opacity:.85;">Iets anders in gedachten</div>
+    <h2>Wat ligt er voor jou voorbij?</h2>
+    <a class="btn on-dark" style="margin-top:44px;" href="/contact/"><span>Neem contact op</span> <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="/"><img src="/assets/logo/bys-logo-light.png" alt="Beyond Your Stay"></a>
+        <p class="tag">Storytelling voor hospitality- en leisuremerken: hotels, restaurants, attracties, wellness en resorts.</p>
+      </div>
+      <div class="fcol"><h5>Menu</h5>
+        <a href="/over-ons/">Over ons</a><a href="/diensten/">Diensten</a><a href="/pakketten/">Pakketten</a><a href="/cases/">Cases</a><a href="/journal/">Journal</a><a href="/studio/">BYS Studio</a><a href="/contact/">Contact</a><a href="/werken-bij/">Vacatures</a></div>
+      <div class="fcol"><h5>Contact</h5>
+        <p>info@beyondyourstay.com</p><p>+31 6 49 84 75 78</p><p>Helmond, NL</p></div>
+      <div class="fcol"><h5>Volg ons</h5>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/beyondyourstayy/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="#06293C" stroke-width="1.4"/><circle cx="12" cy="12" r="4.3" stroke="#06293C" stroke-width="1.4"/><circle cx="17.6" cy="6.4" r="1.1" fill="#06293C"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/beyondyourstay/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" fill="#06293C"/></svg>
+          </a>
+        </div></div>
+    </div><div class="footer-bottom"><span>© 2026 Beyond Your Stay. All rights reserved.</span><span class="footer-legal-links"><a href="/voorwaarden/">Algemene voorwaarden</a> · <a href="/privacy/">Privacyverklaring</a></span></div>
+  </div>
+</footer>
+
+</div>
+
+<script src="/assets/script.js"></script>
+<script>
+
+  const moods = {
+    dawn: {
+      gradient:"linear-gradient(180deg, #04070F 0%, #0A1E36 26%, #163650 50%, #3E4A50 72%, #8A6E4E 88%, #C9A574 100%)",
+      glow:{left:"12%", top:"80%", w:"200px", h:"200px", opacity:.45, color:"rgba(201,165,116,0.55)"},
+      stars:true, starOpacity:.4
+    },
+    sunrise: {
+      gradient:"linear-gradient(180deg,#06293C 0%,#0E4A66 42%,#C98A5E 78%,#F3D9BC 100%)",
+      glow:{left:"36%", top:"66%", w:"260px", h:"260px", opacity:.65, color:"rgba(243,217,188,0.7)"},
+      stars:false
+    },
+    horizon: {
+      gradient:"linear-gradient(180deg, #3E6F92 0%, #6FA0C0 38%, #A9CFE3 68%, #EAF5FA 100%)",
+      glow:{left:"64%", top:"22%", w:"320px", h:"320px", opacity:.55, color:"rgba(255,255,255,0.75)"},
+      stars:false
+    },
+    beyond: {
+      gradient:"linear-gradient(180deg, #010306 0%, #050D1C 24%, #0A1830 50%, #101F38 76%, #141B2E 100%)",
+      glow:{left:"88%", top:"17%", w:"150px", h:"150px", opacity:.4, color:"rgba(235,232,245,0.5)"},
+      stars:true, starOpacity:1
+    }
+  };
+
+  // scatter a fixed set of stars once
+  const starField = [
+    [6,18],[14,32],[22,12],[30,40],[9,55],[38,20],[45,48],[52,10],[60,35],
+    [18,65],[70,15],[78,42],[85,25],[92,55],[65,60],[25,25],[41,8],[95,12],[55,68],[3,38]
+  ];
+  const starsWrap = document.getElementById('journeyStars');
+  starField.forEach(([x,y], i) => {
+    const s = document.createElement('div');
+    s.className = 'star';
+    s.style.left = x + '%';
+    s.style.top = y + '%';
+    s.style.animationDelay = (i * 0.35) + 's';
+    starsWrap.appendChild(s);
+  });
+
+  let activeMoodLayer = 'a';
+  function setMood(tier) {
+    const m = moods[tier];
+    const showEl = document.getElementById(activeMoodLayer === 'a' ? 'journeyBgB' : 'journeyBgA');
+    const hideEl = document.getElementById(activeMoodLayer === 'a' ? 'journeyBgA' : 'journeyBgB');
+    showEl.style.background = m.gradient;
+    showEl.style.opacity = '1';
+    hideEl.style.opacity = '0';
+    activeMoodLayer = activeMoodLayer === 'a' ? 'b' : 'a';
+
+    const glow = document.getElementById('journeyGlow');
+    glow.style.left = m.glow.left;
+    glow.style.top = m.glow.top;
+    glow.style.width = m.glow.w;
+    glow.style.height = m.glow.h;
+    glow.style.opacity = m.glow.opacity;
+    glow.style.background = 'radial-gradient(circle, ' + m.glow.color + ' 0%, rgba(0,0,0,0) 70%)';
+
+    starsWrap.style.opacity = m.stars ? m.starOpacity : 0;
+
+    document.getElementById('journeyMoon').style.opacity = (tier === 'beyond') ? '1' : '0';
+    document.getElementById('journeyMilkyway').style.opacity = (tier === 'beyond') ? '1' : '0';
+  }
+
+  const journeyPos = {
+    dawn:   {left:"66%", bottom:"137px"},
+    sunrise:{left:"74%", bottom:"214px"},
+    horizon:{left:"81%", bottom:"303px"},
+    beyond: {left:"88%", bottom:"457px"}
+  };
+
+  const tierOrder = ['dawn', 'sunrise', 'horizon', 'beyond'];
+  const tierNames = { dawn: 'Dawn', sunrise: 'Sunrise', horizon: 'Horizon', beyond: 'Beyond Horizon' };
+  let currentTier = null;
+  const leaveHandlers = {};
+
+  function selectTier(tier) {
+    const previousTier = currentTier;
+    currentTier = tier;
+
+    document.getElementById('jcName').textContent = tierNames[tier];
+
+    document.querySelectorAll('.journey-marker').forEach(m => m.classList.toggle('active', m.dataset.tier === tier));
+    document.querySelectorAll('.jc-progress-dot').forEach(d => d.classList.toggle('active', d.dataset.tier === tier));
+
+    const bird = document.getElementById('journeyBird');
+    bird.style.left = journeyPos[tier].left;
+    bird.style.bottom = journeyPos[tier].bottom;
+    const birdDark = document.getElementById('journeyBirdDark');
+    birdDark.style.left = journeyPos[tier].left;
+    birdDark.style.bottom = journeyPos[tier].bottom;
+    setMood(tier);
+
+    const newPanel = document.querySelector('.js-panel[data-tier="' + tier + '"]');
+    const oldPanel = previousTier ? document.querySelector('.js-panel[data-tier="' + previousTier + '"]') : null;
+
+    if (oldPanel && oldPanel !== newPanel) {
+      // if this panel was already mid-leave from an earlier switch, clean that up first
+      if (leaveHandlers[previousTier]) {
+        oldPanel.removeEventListener('transitionend', leaveHandlers[previousTier].onEnd);
+        clearTimeout(leaveHandlers[previousTier].timer);
+        delete leaveHandlers[previousTier];
+      }
+      oldPanel.classList.remove('active');
+      // force layout so the browser registers the "active" state before we switch
+      // to "leaving" — otherwise both class changes can get batched into one and
+      // the fly-away transition never actually plays
+      void oldPanel.offsetWidth;
+      oldPanel.classList.add('leaving');
+      const cleanup = () => {
+        oldPanel.classList.remove('leaving');
+        oldPanel.removeEventListener('transitionend', onEnd);
+        clearTimeout(timer);
+        delete leaveHandlers[previousTier];
+      };
+      const onEnd = (e) => {
+        if (e.target !== oldPanel || e.propertyName !== 'opacity') return;
+        cleanup();
+      };
+      // transitionend is the primary trigger; this timer is just a safety net
+      // in case the browser skips the event (e.g. rapid successive switches)
+      const timer = setTimeout(cleanup, 350);
+      oldPanel.addEventListener('transitionend', onEnd);
+      leaveHandlers[previousTier] = { onEnd, timer };
+    }
+
+    if (leaveHandlers[tier]) {
+      newPanel.removeEventListener('transitionend', leaveHandlers[tier].onEnd);
+      clearTimeout(leaveHandlers[tier].timer);
+      delete leaveHandlers[tier];
+    }
+    newPanel.classList.remove('leaving');
+    newPanel.classList.add('active');
+  }
+
+  function stepTier(dir) {
+    const i = tierOrder.indexOf(currentTier);
+    const next = tierOrder[(i + dir + tierOrder.length) % tierOrder.length];
+    selectTier(next);
+  }
+
+  document.getElementById('jcPrev').addEventListener('click', () => stepTier(-1));
+  document.getElementById('jcNext').addEventListener('click', () => stepTier(1));
+  document.querySelectorAll('.jc-progress-dot').forEach(dot => {
+    dot.addEventListener('click', () => selectTier(dot.dataset.tier));
+    dot.style.cursor = 'pointer';
+  });
+
+  // swipe support on the carousel card
+  (function () {
+    const el = document.getElementById('journeyCarousel');
+    let startX = null;
+    el.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+    el.addEventListener('touchend', (e) => {
+      if (startX === null) return;
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) stepTier(dx < 0 ? 1 : -1);
+      startX = null;
+    }, { passive: true });
+  })();
+
+  selectTier('dawn');
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.faq-card').classList.toggle('open');
+    });
+  });
+
+  // Compass email capture (front-end only for now, no email service wired up yet)
+  const compassBtn = document.getElementById('compassDownloadBtn');
+  if (compassBtn) {
+    compassBtn.addEventListener('click', () => {
+      const input = compassBtn.parentElement.querySelector('input[type="email"]');
+      if (!input.value || !input.value.includes('@')) {
+        input.focus();
+        return;
+      }
+      const note = document.getElementById('compassNote');
+      note.classList.add('visible');
+      input.value = '';
+    });
+  }
+</script>
+</body>
+</html>

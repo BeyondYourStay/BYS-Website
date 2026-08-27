@@ -103,38 +103,39 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 revealEls.forEach(el => io.observe(el));
 
-// lang toggle (functional): swaps content of any element carrying data-nl,
-// remembers the choice across pages, and notifies dynamic content (e.g. Packages tool)
-const translatable = document.querySelectorAll('[data-nl]');
-translatable.forEach(el => { el.dataset.en = el.innerHTML; });
-const placeholdable = document.querySelectorAll('[data-nl-placeholder]');
-placeholdable.forEach(el => { el.dataset.enPlaceholder = el.getAttribute('placeholder') || ''; });
-
-function applyLang(useNL, opts) {
-  opts = opts || {};
-  document.querySelectorAll('.lang span').forEach(s => {
-    s.classList.toggle('active', (s.textContent.trim() === 'NL') === useNL);
-  });
-  translatable.forEach(t => { t.innerHTML = useNL ? t.dataset.nl : t.dataset.en; });
-  placeholdable.forEach(t => { t.setAttribute('placeholder', useNL ? t.dataset.nlPlaceholder : t.dataset.enPlaceholder); });
-  document.documentElement.lang = useNL ? 'nl' : 'en';
-  if (opts.save) {
-    try { localStorage.setItem('bys_lang', useNL ? 'nl' : 'en'); } catch (e) {}
-  }
-  document.dispatchEvent(new CustomEvent('bys:langchange', { detail: { lang: useNL ? 'nl' : 'en' } }));
+// language: NL (root) and EN (/en/...) are now separate static pages, not a
+// client-side text swap. The header switcher is a plain link to the
+// counterpart URL. We only remember an explicit choice (via that link, or
+// the homepage banner below) so the banner doesn't reappear on a later visit.
+function getCookie(name) {
+  const m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+  return m ? decodeURIComponent(m[1]) : null;
 }
-
-document.querySelectorAll('.lang span').forEach(el => {
-  el.addEventListener('click', () => {
-    applyLang(el.textContent.trim() === 'NL', { save: true });
-  });
+function setLangCookie(value) {
+  const oneYear = 60 * 60 * 24 * 365;
+  document.cookie = 'bys_lang=' + value + ';max-age=' + oneYear + ';path=/';
+}
+document.querySelectorAll('.lang a[data-lang-switch]').forEach((a) => {
+  a.addEventListener('click', () => setLangCookie(a.dataset.langSwitch));
 });
 
-// on load, restore a previously saved language choice
-(function initLang() {
-  let saved = null;
-  try { saved = localStorage.getItem('bys_lang'); } catch (e) {}
-  if (saved === 'nl') applyLang(true, { save: false });
+// first-visit language banner (homepage only): offer English to browsers
+// with an English language preference, without ever auto-redirecting
+(function () {
+  const banner = document.getElementById('langBanner');
+  if (!banner) return;
+  if (getCookie('bys_lang')) return;
+  const prefersEnglish = (navigator.language || '').toLowerCase().startsWith('en');
+  if (!prefersEnglish) return;
+  banner.classList.add('visible');
+  banner.querySelectorAll('[data-lang-switch]').forEach((a) => {
+    a.addEventListener('click', () => setLangCookie(a.dataset.langSwitch));
+  });
+  const dismiss = banner.querySelector('[data-lang-dismiss]');
+  if (dismiss) dismiss.addEventListener('click', () => {
+    setLangCookie('nl');
+    banner.classList.remove('visible');
+  });
 })();
 
 // industry rail: click-and-drag horizontal scroll (mouse wheel is left alone,
@@ -294,12 +295,6 @@ if (counters.length) {
 
   render();
   setInterval(tick, 2600);
-
-  document.addEventListener('bys:langchange', (e) => {
-    lang = e.detail.lang;
-    i = 0;
-    render();
-  });
 })();
 
 // case detail modal (Cases / Portfolio page)
