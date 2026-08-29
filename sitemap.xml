@@ -97,7 +97,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -106,7 +106,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -143,6 +143,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-marketing-strategy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
     <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beyondyourstay.com/journal/storytelling-horeca/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/restaurant-storytelling/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beyondyourstay.com/en/journal/restaurant-storytelling/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/restaurant-storytelling/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
