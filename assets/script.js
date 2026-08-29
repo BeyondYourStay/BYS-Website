@@ -330,6 +330,27 @@ if (caseOverlay) {
   if (caseClose) caseClose.addEventListener('click', closeCaseModal);
   caseOverlay.addEventListener('click', (e) => { if (e.target === caseOverlay) closeCaseModal(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCaseModal(); });
+
+  // open the matching modal automatically when the page is loaded with a #<id> hash
+  const initialModalId = location.hash.slice(1);
+  if (initialModalId && document.getElementById('modal-' + initialModalId)) {
+    openCaseModal(initialModalId);
+  }
+} else {
+  // homepage case cards: link straight through to the matching case on /cases/
+  const homeCaseCards = document.querySelectorAll('.case[data-modal]');
+  if (homeCaseCards.length) {
+    const casesPath = document.documentElement.lang === 'nl' ? '/cases/' : '/en/cases/';
+    homeCaseCards.forEach(card => {
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'button');
+      const goToCase = () => { window.location.href = casesPath + '#' + card.dataset.modal; };
+      card.addEventListener('click', goToCase);
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToCase(); }
+      });
+    });
+  }
 }
 
 // Contact Form AJAX Handler - No redirect, stays on page

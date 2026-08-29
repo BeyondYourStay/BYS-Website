@@ -323,7 +323,7 @@
     </div></div>
   </div>
 
-  <div class="faq-card">
+  <div class="faq-card" id="compass">
     <button class="faq-toggle"><span>Hoe weet ik wat voor soort marketing het beste bij mij past?</span><span class="faq-plus"></span></button>
     <div class="faq-body"><div class="faq-body-inner">
       <p>Dat verschilt per plek, en dat is precies waar we bij helpen tijdens het intakegesprek. Wil je zelf alvast een idee krijgen? Download The Compass, ons gratis beginnersstappenplan om te ontdekken welke richting bij jouw plek past.</p>
@@ -540,6 +540,12 @@
       btn.closest('.faq-card').classList.toggle('open');
     });
   });
+
+  // auto-open the linked FAQ item when arriving via a #<id> anchor (e.g. #compass)
+  if (location.hash) {
+    const targetCard = document.querySelector(location.hash + '.faq-card');
+    if (targetCard) targetCard.classList.add('open');
+  }
 
   // Compass email capture (front-end only for now, no email service wired up yet)
   const compassBtn = document.getElementById('compassDownloadBtn');

@@ -323,7 +323,7 @@
     </div></div>
   </div>
 
-  <div class="faq-card">
+  <div class="faq-card" id="compass">
     <button class="faq-toggle"><span>How do I know what kind of marketing suits me best?</span><span class="faq-plus"></span></button>
     <div class="faq-body"><div class="faq-body-inner">
       <p>That differs per place, and figuring it out together is exactly what the intake call is for. Want to get a head start yourself? Download The Compass, our free beginner's roadmap to figuring out which direction fits your place.</p>
@@ -540,6 +540,12 @@
       btn.closest('.faq-card').classList.toggle('open');
     });
   });
+
+  // auto-open the linked FAQ item when arriving via a #<id> anchor (e.g. #compass)
+  if (location.hash) {
+    const targetCard = document.querySelector(location.hash + '.faq-card');
+    if (targetCard) targetCard.classList.add('open');
+  }
 
   // Compass email capture (front-end only for now, no email service wired up yet)
   const compassBtn = document.getElementById('compassDownloadBtn');
