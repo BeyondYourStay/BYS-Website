@@ -43,7 +43,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/diensten/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/services/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/diensten/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -52,7 +52,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/diensten/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/services/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/diensten/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -61,7 +61,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/pakketten/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/packages/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/pakketten/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -70,7 +70,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/pakketten/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/packages/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/pakketten/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -97,7 +97,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/"/>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -106,7 +106,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/"/>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -133,7 +133,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-marketing-strategy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -142,7 +142,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-marketing-strategy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -161,6 +161,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/restaurant-storytelling/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
     <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/social-media-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beyondyourstay.com/en/journal/social-media-marketing-strategy/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/social-media-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
