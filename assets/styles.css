@@ -381,7 +381,14 @@ section{position:relative;}
 .case-hover-text{max-height:0;opacity:0;overflow:hidden;transition:all .45s var(--ease);font-family:'Inter',sans-serif;font-size:12.5px;line-height:1.6;font-weight:300;color:var(--white);margin-top:0;}
 .case:hover .case-hover-text{max-height:120px;opacity:.85;margin-top:10px;}
 .case .soon-pill{position:absolute;top:20px;right:20px;z-index:2;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--white);border:1px solid rgba(255,255,255,0.5);padding:5px 12px;border-radius:100px;}
-@media(max-width:900px){.case-grid{grid-template-columns:1fr 1fr;}.case-grid .case:nth-child(3n+2){margin-top:0;}.case{height:260px;}}
+
+/* Bed & Bos "case proof" card: photo + always-on stat overlay, one video's real numbers */
+.case--proof .graded::after{background:linear-gradient(135deg, rgba(6,41,60,0.65) 0%, rgba(6,41,60,0.45) 100%);}
+.case-proof-stats{position:absolute;left:22px;right:22px;top:20px;z-index:2;color:var(--white);text-shadow:0 1px 5px rgba(6,41,60,0.45);}
+.case-proof-stats .cps-small{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(13px,1.5vw,15px);opacity:.9;}
+.case-proof-stats .cps-big{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(28px,4vw,42px);line-height:1.08;margin-top:2px;}
+.case-proof-stats .cps-line{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:clamp(12px,1.2vw,13px);line-height:1.5;opacity:.88;margin-top:10px;max-width:21ch;}
+@media(max-width:900px){.case-grid{grid-template-columns:1fr 1fr;}.case-grid .case:nth-child(3n+2){margin-top:0;}.case{height:260px;}.case-proof-stats{top:16px;left:18px;right:18px;}.case-proof-stats .cps-line{margin-top:7px;}}
 @media(max-width:560px){.case-grid{grid-template-columns:1fr;}}
 .case[data-modal]{cursor:pointer;}
 .case[data-modal]:focus-visible{outline:2px solid var(--dawn);outline-offset:-2px;}
