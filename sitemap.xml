@@ -183,6 +183,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://beyondyourstay.com/journal/employer-branding-horeca/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-employer-branding/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beyondyourstay.com/en/journal/hospitality-employer-branding/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-employer-branding/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://beyondyourstay.com/studio/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/studio/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/studio/"/>
