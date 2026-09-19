@@ -3,289 +3,289 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://beyondyourstay.com/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/"/>
+    <loc>https://www.beyondyourstay.com/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/"/>
+    <loc>https://www.beyondyourstay.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/over-ons/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/over-ons/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/over-ons/"/>
+    <loc>https://www.beyondyourstay.com/over-ons/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/over-ons/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/over-ons/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/about/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/over-ons/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/over-ons/"/>
+    <loc>https://www.beyondyourstay.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/over-ons/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/over-ons/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/diensten/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/diensten/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/diensten/"/>
+    <loc>https://www.beyondyourstay.com/diensten/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/diensten/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/diensten/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/services/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/diensten/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/diensten/"/>
+    <loc>https://www.beyondyourstay.com/en/services/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/diensten/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/diensten/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/pakketten/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/pakketten/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/packages/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/pakketten/"/>
+    <loc>https://www.beyondyourstay.com/pakketten/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/pakketten/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/packages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/pakketten/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/packages/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/pakketten/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/packages/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/pakketten/"/>
+    <loc>https://www.beyondyourstay.com/en/packages/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/pakketten/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/packages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/pakketten/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/cases/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/cases/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/cases/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/cases/"/>
+    <loc>https://www.beyondyourstay.com/cases/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/cases/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/cases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/cases/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/cases/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/cases/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/cases/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/cases/"/>
+    <loc>https://www.beyondyourstay.com/en/cases/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/cases/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/cases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/cases/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/journal/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/"/>
+    <loc>https://www.beyondyourstay.com/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/journal/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/"/>
+    <loc>https://www.beyondyourstay.com/en/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/journal/hotel-marketing-strategie/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/hotel-marketing-strategie/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hotel-marketing-strategy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/hotel-marketing-strategie/"/>
+    <loc>https://www.beyondyourstay.com/journal/hotel-marketing-strategie/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/hotel-marketing-strategie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/hotel-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/hotel-marketing-strategie/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/journal/hotel-marketing-strategy/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/hotel-marketing-strategie/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hotel-marketing-strategy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/hotel-marketing-strategie/"/>
+    <loc>https://www.beyondyourstay.com/en/journal/hotel-marketing-strategy/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/hotel-marketing-strategie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/hotel-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/hotel-marketing-strategie/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/journal/hospitality-marketing-strategie/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-marketing-strategy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
+    <loc>https://www.beyondyourstay.com/journal/hospitality-marketing-strategie/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/hospitality-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/journal/hospitality-marketing-strategy/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-marketing-strategy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
+    <loc>https://www.beyondyourstay.com/en/journal/hospitality-marketing-strategy/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/hospitality-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/hospitality-marketing-strategie/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/journal/storytelling-horeca/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/restaurant-storytelling/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
+    <loc>https://www.beyondyourstay.com/journal/storytelling-horeca/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/storytelling-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/restaurant-storytelling/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/storytelling-horeca/"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/journal/restaurant-storytelling/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/restaurant-storytelling/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/storytelling-horeca/"/>
+    <loc>https://www.beyondyourstay.com/en/journal/restaurant-storytelling/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/storytelling-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/restaurant-storytelling/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/storytelling-horeca/"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/social-media-marketing-strategy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <loc>https://www.beyondyourstay.com/journal/social-media-marketing-strategie-maken/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/social-media-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/journal/social-media-marketing-strategy/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/social-media-marketing-strategy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <loc>https://www.beyondyourstay.com/en/journal/social-media-marketing-strategy/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/social-media-marketing-strategy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/social-media-marketing-strategie-maken/"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/journal/employer-branding-horeca/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-employer-branding/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <loc>https://www.beyondyourstay.com/journal/employer-branding-horeca/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/hospitality-employer-branding/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/employer-branding-horeca/"/>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/journal/hospitality-employer-branding/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/journal/hospitality-employer-branding/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <loc>https://www.beyondyourstay.com/en/journal/hospitality-employer-branding/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/journal/employer-branding-horeca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/journal/hospitality-employer-branding/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/journal/employer-branding-horeca/"/>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/studio/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/studio/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/studio/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/studio/"/>
+    <loc>https://www.beyondyourstay.com/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/studio/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/studio/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/studio/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/studio/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/studio/"/>
+    <loc>https://www.beyondyourstay.com/en/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/studio/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/contact/"/>
+    <loc>https://www.beyondyourstay.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/contact/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/contact/"/>
+    <loc>https://www.beyondyourstay.com/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/contact/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/werken-bij/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/werken-bij/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/careers/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/werken-bij/"/>
+    <loc>https://www.beyondyourstay.com/werken-bij/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/werken-bij/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/careers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/werken-bij/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/careers/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/werken-bij/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/careers/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/werken-bij/"/>
+    <loc>https://www.beyondyourstay.com/en/careers/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/werken-bij/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/careers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/werken-bij/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/privacy/"/>
+    <loc>https://www.beyondyourstay.com/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/privacy/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/privacy/"/>
+    <loc>https://www.beyondyourstay.com/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/privacy/"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/voorwaarden/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/voorwaarden/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/voorwaarden/"/>
+    <loc>https://www.beyondyourstay.com/voorwaarden/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/voorwaarden/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/voorwaarden/"/>
     <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beyondyourstay.com/en/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://beyondyourstay.com/voorwaarden/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://beyondyourstay.com/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beyondyourstay.com/voorwaarden/"/>
+    <loc>https://www.beyondyourstay.com/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.beyondyourstay.com/voorwaarden/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondyourstay.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondyourstay.com/voorwaarden/"/>
     <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

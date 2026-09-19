@@ -4,7 +4,7 @@ Disallow: /studio/
 Disallow: /en/studio/
 
 # Sitemaps
-Sitemap: https://beyondyourstay.com/sitemap.xml
+Sitemap: https://www.beyondyourstay.com/sitemap.xml
 
 # Crawl delay to reduce server load (ms)
 Crawl-delay: 1
