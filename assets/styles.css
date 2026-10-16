@@ -238,8 +238,10 @@ section{position:relative;}
 
 /* ---- client marquee ---- */
 .marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;}
-.marquee-track{display:flex;width:max-content;gap:72px;align-items:center;}
-.marquee-track.is-ready{animation:marquee 34s linear infinite;}
+.marquee .wrap{max-width:none;}
+/* 4 identical sets; padding-right = gap so -50% lands exactly on set 3 (seamless loop) */
+.marquee-track{display:flex;width:max-content;gap:72px;padding-right:72px;align-items:center;}
+.marquee-track.is-ready{animation:marquee 68s linear infinite;}
 .marquee-track img{height:26px;width:auto;object-fit:contain;opacity:.55;filter:grayscale(1);transition:opacity .3s;}
 .marquee-track img.lg{height:40px;}
 .marquee-track img.md{height:34px;}
