@@ -242,6 +242,7 @@ section{position:relative;}
 .marquee-track.is-ready{animation:marquee 34s linear infinite;}
 .marquee-track img{height:26px;width:auto;object-fit:contain;opacity:.55;filter:grayscale(1);transition:opacity .3s;}
 .marquee-track img.lg{height:40px;}
+.marquee-track img.md{height:34px;}
 .marquee-track img:hover{opacity:1;}
 .marquee-track .word{font-family:'Fraunces',serif;font-size:17px;color:var(--navy);opacity:.5;white-space:nowrap;transition:opacity .3s;cursor:default;user-select:none;}
 .marquee-track .word:hover{opacity:1;}
