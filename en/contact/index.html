@@ -111,8 +111,9 @@
     </div>
     <form class="reveal" action="https://formspree.io/f/xjybknvp" method="POST">
       <div class="form-grid">
-        <div class="field"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
+        <div class="field full"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
         <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@property.com" required></div>
+        <div class="field"><label>Phone number</label><input type="tel" name="phone" placeholder="+31 6 12345678" autocomplete="tel" pattern="(\D*\d){8,15}\D*" title="Please enter a valid phone number" required></div>
         <div class="field"><label>Property name</label><input type="text" name="property_name" placeholder="e.g. The Coastal Resort" required></div>
         <div class="field">
           <label>Industry</label>

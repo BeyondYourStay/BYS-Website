@@ -111,8 +111,9 @@
     </div>
     <form class="reveal" action="https://formspree.io/f/xjybknvp" method="POST">
       <div class="form-grid">
-        <div class="field"><label>Naam</label><input type="text" name="name" placeholder="Je naam" required></div>
+        <div class="field full"><label>Naam</label><input type="text" name="name" placeholder="Je naam" required></div>
         <div class="field"><label>E-mail</label><input type="email" name="email" placeholder="jij@bedrijf.com" required></div>
+        <div class="field"><label>Telefoonnummer</label><input type="tel" name="phone" placeholder="06 12345678" autocomplete="tel" pattern="(\D*\d){8,15}\D*" title="Vul een geldig telefoonnummer in" required></div>
         <div class="field"><label>Bedrijfsnaam</label><input type="text" name="property_name" placeholder="bijv. Aan Zee Hotel" required></div>
         <div class="field">
           <label>Branche</label>
