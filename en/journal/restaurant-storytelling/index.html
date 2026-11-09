@@ -22,6 +22,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- PixelFlow Script -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied'});
+try {
+  if (localStorage.getItem('bys_cookie_choice') === 'granted') {
+    gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'});
+  }
+} catch (e) {}
+</script>
 <script>!(function(p,i,x,f,l,o,w){p["PixelFlowObject"]=f;p[f]=p[f]||function(){(p[f].q=p[f].q||[]).push(arguments);};p[f].l=1*new Date();o=i.createElement(x);w=i.getElementsByTagName(x)[0];o.src=l;o.async=1;p[f].apiKey="6257820d2e85790098d6c3bd4e9fbfe5c8c6a5f2dbcf44fd4351bb0d7ffd31ef";p[f].siteId="fc1ad351-9595-44b6-bc83-1d7789cc2608";p[f].apiEndpoint="https://api.pixelflow.so/event";w.parentNode.insertBefore(o,w);})(window,document,"script","pixelFlow","https://slrgkgulru.pixelflow.so/pfm.js");</script>
 <!-- End PixelFlow Script -->
 </head>
@@ -802,6 +812,7 @@
   function choose(value) {
     try { localStorage.setItem(KEY, value); } catch (e) {}
     box.hidden = true;
+    gtag('consent', 'update', {ad_storage: value, ad_user_data: value, ad_personalization: value, analytics_storage: value});
     sendToPixelFlow(value);
   }
 
