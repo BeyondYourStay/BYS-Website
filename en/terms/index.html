@@ -337,12 +337,115 @@
           </a>
         </div></div>
     </div>
-    <div class="footer-bottom"><span>© 2026 Beyond Your Stay. All rights reserved.</span><span class="footer-legal-links"><a href="/en/terms/">Terms &amp; conditions</a> · <a href="/en/privacy/">Privacy policy</a></span></div>
+    <div class="footer-bottom"><span>© 2026 Beyond Your Stay. All rights reserved.</span><span class="footer-legal-links"><a href="/en/terms/">Terms &amp; conditions</a> · <a href="/en/privacy/">Privacy policy</a> · <a href="#" onclick="bysCookieSettings(); return false;">Cookie settings</a></span></div>
   </div>
 </footer>
 
 </div>
 
 <script src="/assets/script.js"></script>
+<!-- BYS Cookiebanner -->
+<div id="bys-cookie" role="dialog" aria-live="polite" aria-label="Cookie-instellingen" hidden>
+  <p id="bys-cookie-text"></p>
+  <div class="bys-cookie-actions">
+    <button type="button" id="bys-cookie-decline"></button>
+    <button type="button" id="bys-cookie-accept"></button>
+  </div>
+</div>
+
+<style>
+  #bys-cookie {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 22px 24px;
+    background: var(--beige);
+    color: var(--navy);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(6, 41, 60, 0.15);
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    font-weight: 300;
+    line-height: 1.55;
+    z-index: 9999;
+  }
+  #bys-cookie[hidden] { display: none; }
+  #bys-cookie p { margin: 0 0 16px; }
+  #bys-cookie a { color: var(--navy); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+  #bys-cookie .bys-cookie-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  #bys-cookie button {
+    width: 100%;
+    padding: 14px 8px;
+    border: 1px solid var(--navy);
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .3s var(--ease), color .3s var(--ease);
+  }
+  #bys-cookie button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+  #bys-cookie-decline { background: transparent; color: var(--navy); }
+  #bys-cookie-decline:hover { background: var(--navy); color: var(--beige); }
+  #bys-cookie-accept { background: var(--navy); color: var(--beige); }
+  #bys-cookie-accept:hover { opacity: .85; }
+</style>
+
+<script>
+(function () {
+  var KEY = 'bys_cookie_choice';
+  var isEnglish = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
+
+  var copy = isEnglish
+    ? {
+        text: 'We use cookies to measure how visitors find us through our ads. Read more in our <a href="/en/privacy/">privacy statement</a>.',
+        accept: 'Accept',
+        decline: 'Decline'
+      }
+    : {
+        text: 'We gebruiken cookies om te meten hoe bezoekers ons via onze advertenties vinden. Lees meer in onze <a href="/privacy/">privacyverklaring</a>.',
+        accept: 'Accepteren',
+        decline: 'Weigeren'
+      };
+
+  var box = document.getElementById('bys-cookie');
+  document.getElementById('bys-cookie-text').innerHTML = copy.text;
+  document.getElementById('bys-cookie-accept').textContent = copy.accept;
+  document.getElementById('bys-cookie-decline').textContent = copy.decline;
+
+  // Geeft de keuze door aan PixelFlow. Wacht even als het script nog laadt.
+  function sendToPixelFlow(value, tries) {
+    tries = tries || 0;
+    if (window.pixelFlow && typeof window.pixelFlow.consent === 'function') {
+      window.pixelFlow.consent(value);
+    } else if (tries < 20) {
+      setTimeout(function () { sendToPixelFlow(value, tries + 1); }, 500);
+    }
+  }
+
+  function choose(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+    box.hidden = true;
+    sendToPixelFlow(value);
+  }
+
+  document.getElementById('bys-cookie-accept').addEventListener('click', function () { choose('granted'); });
+  document.getElementById('bys-cookie-decline').addEventListener('click', function () { choose('denied'); });
+
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  if (!saved) box.hidden = false;
+
+  // Voor een link "Cookie-instellingen" in de footer, zodat bezoekers hun keuze kunnen wijzigen.
+  window.bysCookieSettings = function () { box.hidden = false; };
+})();
+</script>
+<!-- End BYS Cookiebanner -->
 </body>
 </html>
